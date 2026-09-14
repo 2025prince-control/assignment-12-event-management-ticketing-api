@@ -1,0 +1,40 @@
+================================================================================
+🚀 RENDER DEPLOYMENT ENVIRONMENT VARIABLES TEMPLATE
+Student: Prince Yadav (150096725032)
+Project: Event Management & Ticketing API
+================================================================================
+
+When deploying this repository to Render (https://dashboard.render.com/):
+1. Create a New "Web Service".
+2. Connect your GitHub repository: 2025prince-control/assignment-12-event-management-ticketing-api
+3. Build & Start Commands:
+   - Build Command: npm install
+   - Start Command: npm start
+   - Root Directory: (Leave blank or set to .)
+
+4. Under "Environment Variables", add the following variables:
+
+--------------------------------------------------------------------------------
+OPTION A: RECOMMENDED (Single Variable for Firebase Credentials)
+--------------------------------------------------------------------------------
+PORT=10000
+NODE_ENV=production
+JWT_SECRET=supersecret_jwt_key_event_management_2026_prince
+JWT_EXPIRES_IN=7d
+FIREBASE_SERVICE_ACCOUNT={"type":"service_account","project_id":"<PROJECT_ID>","private_key":"<PRIVATE_KEY>","client_email":"<CLIENT_EMAIL>"}
+
+--------------------------------------------------------------------------------
+OPTION B: INDIVIDUAL VARIABLES
+--------------------------------------------------------------------------------
+PORT=10000
+NODE_ENV=production
+JWT_SECRET=supersecret_jwt_key_event_management_2026_prince
+JWT_EXPIRES_IN=7d
+FIREBASE_PROJECT_ID=<PROJECT_ID>
+FIREBASE_CLIENT_EMAIL=<CLIENT_EMAIL>
+FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
+
+================================================================================
+Note: For your actual private credentials ready to copy-paste, refer to the local
+untracked 'render-env.txt' file in your project workspace.
+================================================================================
