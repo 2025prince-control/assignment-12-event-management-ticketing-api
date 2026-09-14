@@ -2,7 +2,8 @@
 
 > **Student Name:** Prince Yadav  
 > **Roll No:** `150096725032`  
-> **Live Render Deployment:** `[Add Render Link Here]`  
+> **Live Render Deployment:** [https://assignment-12-event-management-ticketing-4fpm.onrender.com](https://assignment-12-event-management-ticketing-4fpm.onrender.com/)  
+> **Interactive Swagger Documentation:** [https://assignment-12-event-management-ticketing-4fpm.onrender.com/api-docs](https://assignment-12-event-management-ticketing-4fpm.onrender.com/api-docs)  
 > **Repository:** [https://github.com/2025prince-control/assignment-12-event-management-ticketing-api](https://github.com/2025prince-control/assignment-12-event-management-ticketing-api)  
 > **Tech Stack:** Node.js, Express.js, Firebase Firestore & Auth, express-rate-limit, swagger-ui-express, swagger-jsdoc, dotenv, cors, bcryptjs, jsonwebtoken  
 
