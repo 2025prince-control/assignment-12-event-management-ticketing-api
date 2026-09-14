@@ -180,6 +180,9 @@ assignment-12-event-management-ticketing-api/
 │   │   ├── authController.js    # Authentication & Profile logic
 │   │   ├── eventController.js   # Event CRUD, filters & attendee listing
 │   │   └── ticketController.js  # Atomic booking & cancellation transactions
+│   ├── docs/
+│   │   ├── swagger-ui.png       # Interactive Swagger UI screenshot
+│   │   └── firestore-collections.png # Firestore collections screenshot
 │   ├── middleware/
 │   │   ├── auth.js              # JWT verification
 │   │   ├── checkRole.js         # Organizer vs Attendee guard
@@ -194,13 +197,8 @@ assignment-12-event-management-ticketing-api/
 │   ├── package.json             # Subfolder package dependencies
 │   ├── server.js                # Express app entry point
 │   └── README.md                # Subfolder documentation
-├── docs/
-│   ├── swagger-ui.png           # Interactive Swagger UI screenshot
-│   └── firestore-collections.png # Firestore collections screenshot
 ├── .gitignore                   # Ignores credentials, .env, and node_modules
 ├── package.json                 # Root package delegator for Render
-├── render-env.txt               # Direct copy-paste guide for Render environment variables
-├── server.js                    # Root server proxy
 └── README.md                    # Main Project Documentation
 ```
 
@@ -208,7 +206,11 @@ assignment-12-event-management-ticketing-api/
 
 ## 🔐 Environment Variables for Render Deployment
 
-Copy and paste the following environment variables into your **Render Dashboard** under **Environment Variables**:
+When deploying to **Render** ([https://dashboard.render.com/](https://dashboard.render.com/)):
+1. Create a New **Web Service** and select `assignment-12-event-management-ticketing-api`.
+2. **Build Command:** `npm install`
+3. **Start Command:** `npm start`
+4. Under **Environment Variables**, add:
 
 | Key | Example Value | Description |
 |---|---|---|
@@ -216,9 +218,7 @@ Copy and paste the following environment variables into your **Render Dashboard*
 | `NODE_ENV` | `production` | Production environment mode |
 | `JWT_SECRET` | `supersecret_jwt_key_event_management_2026_prince` | Secret key for signing JWT tokens |
 | `JWT_EXPIRES_IN` | `7d` | Expiration window for JWT tokens |
-| `FIREBASE_SERVICE_ACCOUNT` | *JSON String (see `render-env.txt`)* | Firebase Admin service account JSON credentials string |
-
-> **Tip:** You can also copy the pre-formatted values directly from [render-env.txt](file:///Users/prince/Desktop/assignment%2012%20event%20management%20ticket%20api%20/render-env.txt).
+| `FIREBASE_SERVICE_ACCOUNT` | `{"type":"service_account","project_id":"...","private_key":"...","client_email":"..."}` | Service account JSON string |
 
 ---
 
@@ -226,6 +226,7 @@ Copy and paste the following environment variables into your **Render Dashboard*
 
 ### 1. Install Dependencies
 ```bash
+cd "prince yadav 150096725032"
 npm install
 ```
 
