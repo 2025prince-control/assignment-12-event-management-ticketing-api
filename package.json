@@ -4,6 +4,7 @@
   "description": "High-concurrency Event Ticketing & Live Booking REST API backed by Google Firebase Firestore, secured with JWT RBAC, hardened with API Rate Limiting, and documented with Swagger OpenAPI 3.0",
   "main": "prince yadav 150096725032/server.js",
   "scripts": {
+    "build": "echo 'Build complete'",
     "start": "node \"prince yadav 150096725032/server.js\"",
     "dev": "nodemon \"prince yadav 150096725032/server.js\"",
     "test": "node \"prince yadav 150096725032/test/api-test.js\""
